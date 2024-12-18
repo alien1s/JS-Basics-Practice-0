@@ -1,1 +1,16 @@
-document.body.children[1].children[0].herf = 'https://google.com';
+let paragraphElement = document.querySelector("p");
+
+function changeParagraphText() {
+  paragraphElement.textContent = "Clicked!";
+}
+
+paragraphElement.addEventListener("click", changeParagraphText);
+
+let inputElement = document.querySelector("input");
+
+function retrieveUserInput() {
+  let enterdText = inputElement.value;
+  console.log(enterdText);
+}
+
+inputElement.addEventListener("input", retrieveUserInput);
